@@ -1,0 +1,37 @@
+{
+  "name": "starter-react",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@formily/antd": "^2.1.11",
+    "@formily/core": "^2.1.11",
+    "@formily/react": "^2.1.11",
+    "@unocss/reset": "^0.44.7",
+    "ahooks": "^3.6.2",
+    "antd": "^4.22.2",
+    "moment": "^2.29.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "recoil": "^0.7.4"
+  },
+  "devDependencies": {
+    "@sudongyuer/eslint-config": "^0.1.3",
+    "@types/node": "^18.6.2",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.0",
+    "eslint": "^8.20.0",
+    "less": "^4.1.3",
+    "typescript": "^4.6.4",
+    "unocss": "^0.44.7",
+    "vite": "^3.0.0"
+  }
+}
