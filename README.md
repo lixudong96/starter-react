@@ -16,3 +16,20 @@
 ## todo
 
 - [ ] vitest
+
+## how use it repo
+
+- use degit
+
+  ```bash
+  pnpm i -g degit
+  degit lixudong96/starter-react folder-name
+  ```
+
+- use pi
+
+  ```bash
+  pnpm i -g pi
+  ec
+  # choose degitReact
+  ```
