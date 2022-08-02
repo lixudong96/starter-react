@@ -3,6 +3,7 @@ import { Button } from 'antd'
 import { ErrorBoundary } from 'react-error-boundary'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { QueryClientProvider } from '@tanstack/react-query'
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { Spinner } from '@/components/Element'
 import { MainLayout } from '@/components/Layout'
 import { queryClient } from '@/lib/react-query'
@@ -35,6 +36,7 @@ export const AppProvider = ({ children }: AppProviderProps) => (
     >
     <ErrorBoundary FallbackComponent={ErrorFallback}>
       <QueryClientProvider client={queryClient}>
+        {process.env.NODE_ENV === 'development' && <ReactQueryDevtools initialIsOpen={false} />}
         <Router>
           <MainLayout>
             {children}
