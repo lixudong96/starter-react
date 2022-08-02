@@ -2,8 +2,10 @@ import * as React from 'react'
 import { Button } from 'antd'
 import { ErrorBoundary } from 'react-error-boundary'
 import { BrowserRouter as Router } from 'react-router-dom'
+import { QueryClientProvider } from '@tanstack/react-query'
 import { Spinner } from '@/components/Element'
 import { MainLayout } from '@/components/Layout'
+import { queryClient } from '@/lib/react-query'
 
 const ErrorFallback = () => {
   return (
@@ -32,11 +34,13 @@ export const AppProvider = ({ children }: AppProviderProps) => (
       }
     >
     <ErrorBoundary FallbackComponent={ErrorFallback}>
-      <Router>
-        <MainLayout>
-          {children}
-        </MainLayout>
-      </Router>
+      <QueryClientProvider client={queryClient}>
+        <Router>
+          <MainLayout>
+            {children}
+          </MainLayout>
+        </Router>
+      </QueryClientProvider>
     </ErrorBoundary>
   </React.Suspense>
 )
