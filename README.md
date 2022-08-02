@@ -10,7 +10,8 @@
 - [x] husky
 - [x] formily
 - [x] ahooks
-- [x] recoil
+- [x] [zustand](https://github.com/pmndrs/zustand)
+- [x] [react-query](https://tanstack.com/query/v4/docs/quick-start)
 - [x] react-router
 - [x] clsx
 
