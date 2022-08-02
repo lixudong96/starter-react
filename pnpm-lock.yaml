@@ -21,7 +21,6 @@ specifiers:
   react-dom: ^18.2.0
   react-error-boundary: ^3.1.4
   react-router-dom: '6'
-  recoil: ^0.7.4
   typescript: ^4.6.4
   unocss: ^0.44.7
   vite: ^3.0.0
@@ -40,7 +39,6 @@ dependencies:
   react-dom: registry.npmjs.org/react-dom/18.2.0_react@18.2.0
   react-error-boundary: 3.1.4_react@18.2.0
   react-router-dom: registry.npmjs.org/react-router-dom/6.3.0_react-dom@18.2.0+react@18.2.0
-  recoil: registry.npmjs.org/recoil/0.7.4_react-dom@18.2.0+react@18.2.0
 
 devDependencies:
   '@sudongyuer/eslint-config': registry.npmjs.org/@sudongyuer/eslint-config/0.1.3_eslint@8.20.0+typescript@4.7.4
@@ -3192,12 +3190,6 @@ packages:
       duplexer: registry.npmjs.org/duplexer/0.1.2
     dev: true
 
-  registry.npmjs.org/hamt_plus/1.0.2:
-    resolution: {integrity: sha512-t2JXKaehnMb9paaYA7J0BX8QQAY8lwfQ9Gjf4pg/mk4krt+cmwmU652HOoWonf+7+EQV97ARPMhhVgU1ra2GhA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/hamt_plus/-/hamt_plus-1.0.2.tgz}
-    name: hamt_plus
-    version: 1.0.2
-    dev: false
-
   registry.npmjs.org/has-bigints/1.0.2:
     resolution: {integrity: sha512-tSvCKtBr9lkF0Ex0aQiP9N+OpV4zi2r/Nee5VkRDbaqv35RLYMzbwQfFSZZH0kR+Rd6302UJZ2p/bJCEoR3VoQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/has-bigints/-/has-bigints-1.0.2.tgz}
     name: has-bigints
@@ -5121,26 +5113,6 @@ packages:
     dependencies:
       picomatch: registry.npmjs.org/picomatch/2.3.1
     dev: true
-
-  registry.npmjs.org/recoil/0.7.4_react-dom@18.2.0+react@18.2.0:
-    resolution: {integrity: sha512-sCXvQGMfSprkNU4ZRkJV4B0qFQSURJMgsICqY1952WRlg66NMwYqi6n67vhnhn0qw4zHU1gHXJuMvRDaiRNFZw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/recoil/-/recoil-0.7.4.tgz}
-    id: registry.npmjs.org/recoil/0.7.4
-    name: recoil
-    version: 0.7.4
-    peerDependencies:
-      react: '>=16.13.1'
-      react-dom: '*'
-      react-native: '*'
-    peerDependenciesMeta:
-      react-dom:
-        optional: true
-      react-native:
-        optional: true
-    dependencies:
-      hamt_plus: registry.npmjs.org/hamt_plus/1.0.2
-      react: registry.npmjs.org/react/18.2.0
-      react-dom: registry.npmjs.org/react-dom/18.2.0_react@18.2.0
-    dev: false
 
   registry.npmjs.org/regexp-tree/0.1.24:
     resolution: {integrity: sha512-s2aEVuLhvnVJW6s/iPgEGK6R+/xngd2jNQ+xy4bXNDKxZKJH6jpPHY6kVeVv1IeLCHgswRj+Kl3ELaDjG6V1iw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/regexp-tree/-/regexp-tree-0.1.24.tgz}
