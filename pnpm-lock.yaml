@@ -6,6 +6,7 @@ specifiers:
   '@formily/react': ^2.1.11
   '@sudongyuer/eslint-config': ^0.1.3
   '@tanstack/react-query': ^4.0.10
+  '@tanstack/react-query-devtools': ^4.0.10
   '@types/node': ^18.6.2
   '@types/react': ^18.0.15
   '@types/react-dom': ^18.0.6
@@ -33,6 +34,7 @@ dependencies:
   '@formily/core': registry.npmjs.org/@formily/core/2.1.11
   '@formily/react': registry.npmjs.org/@formily/react/2.1.11_57a455a7e5bd76cb6184b2fa04fc5e58
   '@tanstack/react-query': 4.0.10_react-dom@18.2.0+react@18.2.0
+  '@tanstack/react-query-devtools': 4.0.10_react@18.2.0
   '@unocss/reset': registry.npmjs.org/@unocss/reset/0.44.7
   ahooks: registry.npmjs.org/ahooks/3.6.2_react@18.2.0
   antd: registry.npmjs.org/antd/4.22.2_react-dom@18.2.0+react@18.2.0
@@ -98,8 +100,25 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
+  /@tanstack/match-sorter-utils/8.1.1:
+    resolution: {integrity: sha512-IdmEekEYxQsoLOR0XQyw3jD1GujBpRRYaGJYQUw1eOT1eUugWxdc7jomh1VQ1EKHcdwDLpLaCz/8y4KraU4T9A==}
+    engines: {node: '>=12'}
+    dependencies:
+      remove-accents: 0.4.2
+    dev: false
+
   /@tanstack/query-core/4.0.10:
     resolution: {integrity: sha512-9LsABpZXkWZHi4P1ozRETEDXQocLAxVzQaIhganxbNuz/uA3PsCAJxJTiQrknG5htLMzOF5MqM9G10e6DCxV1A==}
+    dev: false
+
+  /@tanstack/react-query-devtools/4.0.10_react@18.2.0:
+    resolution: {integrity: sha512-3J7LLYQjfjTI0DbPo0bA+M3l4kdvYSWAqihpeG1u93WVyZj0OEFviUv+4cK7+k2AVgQJAPMZ5xvtewKxOOFVrw==}
+    dependencies:
+      '@tanstack/match-sorter-utils': 8.1.1
+      '@types/use-sync-external-store': 0.0.3
+      use-sync-external-store: 1.2.0_react@18.2.0
+    transitivePeerDependencies:
+      - react
     dev: false
 
   /@tanstack/react-query/4.0.10_react-dom@18.2.0+react@18.2.0:
@@ -498,6 +517,10 @@ packages:
 
   /regenerator-runtime/0.13.9:
     resolution: {integrity: sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==}
+    dev: false
+
+  /remove-accents/0.4.2:
+    resolution: {integrity: sha512-7pXIJqJOq5tFgG1A2Zxti3Ht8jJF337m4sowbuHsW30ZnkQFnDzy9qBNhgzX8ZLW4+UBcXiiR7SwR6pokHsxiA==}
     dev: false
 
   /shallowequal/1.1.0:
