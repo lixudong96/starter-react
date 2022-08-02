@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { Button } from 'antd'
 import { ErrorBoundary } from 'react-error-boundary'
-import { RecoilRoot } from 'recoil'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { Spinner } from '@/components/Element'
 import { MainLayout } from '@/components/Layout'
@@ -33,13 +32,11 @@ export const AppProvider = ({ children }: AppProviderProps) => (
       }
     >
     <ErrorBoundary FallbackComponent={ErrorFallback}>
-      <RecoilRoot>
-        <Router>
-          <MainLayout>
-            {children}
-          </MainLayout>
-        </Router>
-      </RecoilRoot>
+      <Router>
+        <MainLayout>
+          {children}
+        </MainLayout>
+      </Router>
     </ErrorBoundary>
   </React.Suspense>
 )

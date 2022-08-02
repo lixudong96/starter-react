@@ -25,6 +25,7 @@ specifiers:
   typescript: ^4.6.4
   unocss: ^0.44.7
   vite: ^3.0.0
+  zustand: ^4.0.0
 
 dependencies:
   '@formily/antd': registry.npmjs.org/@formily/antd/2.1.11_5a98b3427cb80b685b8c92119b3e614e
@@ -41,6 +42,7 @@ dependencies:
   react-dom: registry.npmjs.org/react-dom/18.2.0_react@18.2.0
   react-error-boundary: 3.1.4_react@18.2.0
   react-router-dom: registry.npmjs.org/react-router-dom/6.3.0_react-dom@18.2.0+react@18.2.0
+  zustand: 4.0.0_react@18.2.0
 
 devDependencies:
   '@sudongyuer/eslint-config': registry.npmjs.org/@sudongyuer/eslint-config/0.1.3_eslint@8.20.0+typescript@4.7.4
@@ -516,6 +518,22 @@ packages:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
       react: registry.npmjs.org/react/18.2.0
+    dev: false
+
+  /zustand/4.0.0_react@18.2.0:
+    resolution: {integrity: sha512-OrsfQTnRXF1LZ9/vR/IqN9ws5EXUhb149xmPjErZnUrkgxS/gAHGy2dPNIVkVvoxrVe1sIydn4JjF0dYHmGeeQ==}
+    engines: {node: '>=12.7.0'}
+    peerDependencies:
+      immer: '>=9.0'
+      react: '>=16.8'
+    peerDependenciesMeta:
+      immer:
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      react: registry.npmjs.org/react/18.2.0
+      use-sync-external-store: 1.2.0_react@18.2.0
     dev: false
 
   registry.npmjs.org/@ampproject/remapping/2.2.0:
