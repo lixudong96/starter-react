@@ -5,7 +5,8 @@ export const Demo = () => {
     <div>
       <nav className="my-2">
         <Link className="mr-5" to="/demo/zustand">zustand</Link>
-        <Link to="/demo/router/333">router</Link>
+        <Link className="mr-5" to="/demo/router/333">router</Link>
+        <Link to="/demo/react-query">react-query</Link>
       </nav>
       <Outlet />
     </div>
