@@ -14,6 +14,7 @@
     "@formily/antd": "^2.1.11",
     "@formily/core": "^2.1.11",
     "@formily/react": "^2.1.11",
+    "@tanstack/react-query": "^4.0.10",
     "@unocss/reset": "^0.44.7",
     "ahooks": "^3.6.2",
     "antd": "^4.22.2",
