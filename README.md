@@ -24,14 +24,14 @@
 - use degit
 
   ```bash
-  pnpm i -g degit
+  pnpm add -g degit
   degit lixudong96/starter-react folder-name
   ```
 
 - use pi
 
   ```bash
-  pnpm i -g pi
+  pnpm add -g @tickh/pi
   ec
   # choose degitReact
   ```
